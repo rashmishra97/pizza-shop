@@ -1,0 +1,11 @@
+.pizza-stages-section {
+    margin-bottom: 20px;
+    text-align: center;
+    width: 80%;
+  }
+
+  .pizza-stages{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+  }
