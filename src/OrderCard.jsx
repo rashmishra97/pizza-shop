@@ -2,8 +2,8 @@ const OrderCard = ({ order, handleMoveToNextStage, handleCancelOrder }) => {
   const { id, type, size, base, status, [`${status}_time`]: stageTime } = order;
 
   const getBackgroundColor = () => {
-    if (stageTime > 60 && status !== 'Order Picked') {
-      return 'red';
+    if (stageTime > 180 && status !== 'Order Picked') {
+      return '#EB1E2B';
     } else {
       switch (status) {
         case 'Order Placed':
@@ -22,7 +22,7 @@ const OrderCard = ({ order, handleMoveToNextStage, handleCancelOrder }) => {
 
   return (
     <div className="order-card" style={{ backgroundColor: getBackgroundColor() }}>
-      <p>Order Id: {id}</p>
+      <p>Order Id: 00{id}</p>
       <p>Type: {type}</p>
       <p>Size: {size}</p>
       <p>Base: {base}</p>
